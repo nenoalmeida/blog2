@@ -25,6 +25,19 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'carrierwave'
 
+gem 'foreigner'
+
+gem 'mini_magick'
+
+gem "rspec-rails", :group => [:test, :development]
+group :test do
+  gem "factory_girl_rails"
+  gem "capybara"
+  gem "guard-rspec"
+end
+
+
+
 
 
 # Use ActiveModel has_secure_password
@@ -48,4 +61,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
